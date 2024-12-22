@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soil Moisture Monitor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <h1>Soil Moisture Level</h1>
+        <div id="moistureLevelDisplay">Loading...</div>
+        <!-- Updated here -->
+        <img
+          src="assets/moisture.png"
+          class="icon moisture_icon"
+          alt="Moisture Icon"
+        />
+      </div>
+      <div class="box box2">
+        <h1>Environmental Humidity</h1>
+        <div id="humiditylevel">Loading...</div>
+        <img
+          src="assets/weather.png"
+          class="icon humidity_icon"
+          alt="Humidity Icon"
+        />
+      </div>
+      <div class="timer">
+        <div id="dateTime">Loading date and time</div>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

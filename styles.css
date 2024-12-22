@@ -1,0 +1,125 @@
+/* Base styling */
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(
+    to top,
+    #b2d8b2,
+    #c2e3c2 15%,
+    #d0ecd0 30%,
+    #dff5df 45%,
+    #eaf9ea 60%,
+    #f1fbf1 75%,
+    #f8fdf8 90%,
+    #ffffff
+  );
+}
+
+h1 {
+  color: white;
+  font-size: 1.6em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Box styling with nature-inspired gradients */
+.box {
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #81c784,
+    #66bb6a
+  ); /* Placeholder gradient */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  border-top: 5px solid transparent;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Distinct environmental gradients */
+.box1 {
+  background: linear-gradient(
+    135deg,
+    #4caf50,
+    #388e3c
+  ); /* Forest green for Soil Moisture */
+  border-top-color: #2e7d32;
+}
+
+.box2 {
+  background: linear-gradient(135deg, #26c6da, #00acc1); /* Teal for Humidity */
+  border-top-color: #00838f;
+}
+
+
+
+#moistureLevel,
+#humiditylevel {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+/* Icon styling */
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Timer styling with sky-blue theme */
+.timer {
+  font-family: sans-serif;
+  font-weight: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #42a5f5,
+    #1e88e5
+  ); /* Deeper blue for contrast */
+  border-radius: 10 10 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .timer {
+    font-size: 1em;
+  }
+}
